@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext');
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5{
+    margin:0.3em 0;
+}
+h1{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+img{
+    -webkit-user-drag: none;
+    width: 100%;
+}
+
+.front-ico > svg {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+
+.progress-ring {
+  
+}
+
+.progress-ring__circle {
+  transition: 0.35s stroke-dashoffset;
+  
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
