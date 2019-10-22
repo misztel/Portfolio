@@ -1,14 +1,15 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../utils/colors';
 import H1 from "../Semanatic/H1";
+import Circle from './Circle';
 
 
 const StatsWrapper = styled.div`
   height: auto;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   -webkit-box-pack: center;
   position: relative;
@@ -21,58 +22,22 @@ const StatsWrapper = styled.div`
 
 const Stats = () => {
 
-
-    useEffect(() =>{
-        var circle = document.querySelector('circle');
-        console.log(circle.r);
-        var radius = circle.r.baseVal.value;
-        var circumference = radius * 2 * Math.PI;
-
-        circle.style.strokeDasharray = `${circumference} ${circumference}`;
-        circle.style.strokeDashoffset = `${circumference}`;
-
-        function setProgress(percent) {
-        const offset = circumference - percent / 100 * circumference;
-        circle.style.strokeDashoffset = offset;
-        }
-
-        setProgress(10);
-    }, []);
-
   return(
-    <StatsWrapper>
+    <>
         <H1>Stats</H1>
-        <div>
-        <svg
-            className="progress-ring"
-            width="120"
-            height="120">
-            <circle
-                className="progress-ring__circle"
-                stroke="white"
-                strokeWidth="4"
-                fill="transparent"
-                r="52"
-                cx="60"
-                cy="60"
-            />
-        </svg>
-        <svg
-            className="progress-ring"
-            width="120"
-            height="120">
-            <circle
-                className="progress-ring__circle"
-                stroke="white"
-                strokeWidth="4"
-                fill="transparent"
-                r="52"
-                cx="60"
-                cy="60"
-            />
-        </svg>
-        </div>
-    </StatsWrapper>
+        <StatsWrapper>
+            <Circle
+            radius={ 60 }
+            stroke={ 4 }
+            progress={ 80 }
+        />
+         <Circle
+            radius={ 60 }
+            stroke={ 4 }
+            progress={ 80 }
+        />
+        </StatsWrapper>
+    </>
   ) 
 };
 

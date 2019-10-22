@@ -24,13 +24,14 @@ img{
     margin-top: 10px;
 }
 
-.progress-ring {
-  
+circle{
+    stroke-dasharray: 360;
+    stroke-dashoffset: 359;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke-dashoffset 0.5s;
 }
 
-.progress-ring__circle {
-  transition: 0.35s stroke-dashoffset;
-  
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
+circle:hover{
+    stroke-dashoffset: 0;
 }
