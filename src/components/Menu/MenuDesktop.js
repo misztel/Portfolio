@@ -49,32 +49,17 @@ const MenuDesktop = () => (
     <MenuLinksWrapper>
       <MenuLink>
         <StyledLink activeClassName="active" to="/">
-          Strona Główna
+          About Me
         </StyledLink>
       </MenuLink>
       <MenuLink>
         <StyledLink activeClassName="active" to="/onas">
-          O Nas
-        </StyledLink>
-      </MenuLink>
-      <MenuLink>
-        <StyledLink activeClassName="active" to="/atrakcje">
-          Atrakcje
-        </StyledLink>
-      </MenuLink>
-      <MenuLink>
-        <StyledLink activeClassName="active" to="/cennik">
-          Cennik
-        </StyledLink>
-      </MenuLink>
-      <MenuLink>
-        <StyledLink activeClassName="active" to="/galeria">
-          Galeria
+          My Work
         </StyledLink>
       </MenuLink>
       <MenuLink>
         <StyledLink activeClassName="active" to="/kontakt">
-          Kontakt
+          Contact
         </StyledLink>
       </MenuLink>
     </MenuLinksWrapper>

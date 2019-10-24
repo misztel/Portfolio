@@ -25,8 +25,8 @@ img{
 }
 
 circle{
-    stroke-dasharray: 360;
-    stroke-dashoffset: 359;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 450;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
     transition: stroke-dashoffset 0.5s;

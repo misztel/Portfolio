@@ -60,8 +60,6 @@ const Hero = () => (
             <Image />
           </div>
       </HeroImage>
-        {/* 
-        3. Socials */}
     </HeroWrapper>
   </>
 );

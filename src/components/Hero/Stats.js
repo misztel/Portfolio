@@ -3,13 +3,16 @@ import styled from 'styled-components';
 import { colors } from '../../utils/colors';
 import H1 from "../Semanatic/H1";
 import Circle from './Circle';
+import Row from '../Row/Row';
+import Container from '../Container/Container';
+import Column from '../Column/Column';
 
 
 const StatsWrapper = styled.div`
   height: auto;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   -webkit-box-pack: center;
   position: relative;
@@ -24,18 +27,46 @@ const Stats = () => {
 
   return(
     <>
-        <H1>Stats</H1>
         <StatsWrapper>
-            <Circle
-            radius={ 60 }
-            stroke={ 4 }
-            progress={ 80 }
-        />
-         <Circle
-            radius={ 60 }
-            stroke={ 4 }
-            progress={ 80 }
-        />
+            <Row>
+                <Container>
+                    <Column xxs="12">
+                        <H1>Stats</H1>
+                    </Column>
+                </Container>
+            </Row>
+            <Row>
+                <Container>
+                    <Column xs="12" md="3">
+                        <Circle
+                            radius={ 60 }
+                            stroke={ 4 }
+                            progress={ 80 }
+                        />
+                    </Column>
+                    <Column xs="12" md="3">
+                        <Circle
+                            radius={ 60 }
+                            stroke={ 4 }
+                            progress={ 80 }
+                        />
+                    </Column>
+                    <Column xs="12" md="3">
+                        <Circle
+                            radius={ 60 }
+                            stroke={ 4 }
+                            progress={ 80 }
+                        />
+                    </Column>
+                    <Column xs="12" md="3">
+                        <Circle
+                            radius={ 60 }
+                            stroke={ 4 }
+                            progress={ 80 }
+                        />
+                    </Column>
+                </Container>
+            </Row>
         </StatsWrapper>
     </>
   ) 
