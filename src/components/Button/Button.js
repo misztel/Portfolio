@@ -12,9 +12,10 @@ const Button = styled.button`
     border: solid 2px ${colors.white};
     border-radius: 30px;
     cursor: pointer;
-    margin: 20px 10px 20px 0px;
+    margin: ${props => props.hero ? '20px 10px 20px 0px' : '20px auto'};
     padding: 14px 40px;
     transition: background-color 0.7s ease 0s, color 0.7s ease 0s;
+    width: fit-content;
 
   :hover {
     color: ${props => props.secondary ? colors.primary : colors.white};

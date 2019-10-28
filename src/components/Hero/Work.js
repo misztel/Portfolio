@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../utils/colors';
-import H1 from '../Semanatic/H1';
+import H2 from '../Semanatic/H2';
 import Row from '../Row/Row';
 import Container from '../Container/Container';
 import Column from '../Column/Column';
@@ -36,27 +36,28 @@ const Box = styled.div`
 const Work = () => {
     return(
       <WorkWrapper>
-          <H1 secondary>Work</H1>
-          <Row>
-              <Container wide>
-                  <Column xs="12" md="4">
-                    <Box>  
-                       <Button> Visit Website</Button>
-                       <Button> See on Github</Button>
-                    </Box>
-                  </Column>
-                  <Column xs="12" md="4">
-                    <p>  
-                        Lorem ipsum dolor sit amet, consectetur
-                    </p>
-                  </Column>
-                  <Column xs="12" md="4">
-                    <p>  
-                        Lorem ipsum dolor sit amet, consectetur
-                    </p>
-                  </Column>
-              </Container>
-          </Row>
+        <Row>
+          <Container>
+            <Column xs="12">
+              <H2 center secondary>Work</H2>
+            </Column>
+          </Container>
+        </Row>  
+        <Row>
+          <Container wide>
+            <Column xs="12" md="6">
+              <Box>  
+                  <Button> Visit Website</Button>
+                  <Button> See on Github</Button>
+              </Box>
+            </Column>
+            <Column xs="12" md="6">
+              <p>  
+                  Lorem ipsum dolor sit amet, consectetur
+              </p>
+            </Column>
+          </Container>
+        </Row>
         
       </WorkWrapper>
   )

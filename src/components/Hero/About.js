@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../utils/colors';
-import H1 from '../Semanatic/H1';
-
+import H2 from '../Semanatic/H2';
+import Row from '../Row/Row';
+import Container from '../Container/Container';
+import Column from '../Column/Column';
 
 const AboutWrapper = styled.div`
   height: auto;
@@ -20,10 +22,23 @@ const AboutWrapper = styled.div`
 const AboutMe = () => {
     return(
       <AboutWrapper>
-        <H1 secondary>O Mnie</H1>
-        <p>  
-            Lorem ipsum dolor sit amet, consectetur
-        </p>
+        <Row>
+          <Container>
+            <Column xxs="12">
+              <H2 center secondary>About Me</H2>
+            </Column>
+          </Container>
+        </Row>
+        <Row>
+          <Container>
+            <Column xxs="12">
+              <p>  
+                  Lorem ipsum dolor sit amet, consectetur,ipsum dolor sit amet 
+                  consectetur, ipsum dolor sit amet, consectetur
+              </p>
+            </Column>
+          </Container>
+        </Row>
       </AboutWrapper>
   )
 };

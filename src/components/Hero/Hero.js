@@ -46,8 +46,8 @@ const Hero = () => (
         <H1 big>Maciej Misztela</H1>
         <H1>Frontend Developer</H1>
         
-        <Button>Contact me</Button>
-        <Button secondary>Download CV</Button>
+        <Button hero>Contact me</Button>
+        <Button secondary hero>Download CV</Button>
         <div className="front-ico"> 
           <FontAwesomeIcon icon={faLinkedin} />
           <FontAwesomeIcon icon={faGithub} />
