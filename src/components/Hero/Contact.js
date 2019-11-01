@@ -5,21 +5,18 @@ import Container from '../Container/Container';
 import Column from '../Column/Column';
 import Section from '../Section/Section';
 
-const AboutMe = () => {
+const Contact = () => {
     return(
       <Section>
         <Row>
           <Container>
-            <Column xxs="12">
-              <H2 center secondary>About Me</H2>
+            <Column xs="12">
+              <H2 center secondary>Contact</H2>
             </Column>
           </Container>
-          <Container>
-            <Column xxs="12">
-              <p>  
-                  Lorem ipsum dolor sit amet, consectetur,ipsum dolor sit amet 
-                  consectetur, ipsum dolor sit amet, consectetur
-              </p>
+          <Container wide>
+            <Column xs="12" md="12">
+              <p>This is siple text</p>
             </Column>
           </Container>
         </Row>
@@ -27,4 +24,4 @@ const AboutMe = () => {
   )
 };
 
-export default AboutMe;
+export default Contact;

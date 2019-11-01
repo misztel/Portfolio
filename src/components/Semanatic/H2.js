@@ -7,7 +7,7 @@ const H2 = styled.h2`
     font-size: 32px;
     display: flex;
     justify-content: ${props => props.center ? 'center' : 'flex-start'};
-    margin: 30px 0 20px 0;
+    margin: 10px 0 40px 0;
 `;
 
 export default H2;

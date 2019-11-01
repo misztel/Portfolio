@@ -6,20 +6,7 @@ import Row from '../Row/Row';
 import Container from '../Container/Container';
 import Column from '../Column/Column';
 import Button from  "../Button/Button";
-
-
-const WorkWrapper = styled.div`
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  -webkit-box-pack: center;
-  position: relative;
-  align-items: flex-start;
-  background-color: ${colors.white};
-  color: ${colors.primary};
-`;
+import Section from '../Section/Section';
 
 const Box = styled.div`
     width: 100%;
@@ -30,20 +17,17 @@ const Box = styled.div`
     background-color: ${colors.primary};
     color: ${colors.white};
     border-radius: 12px;
-
 `;
 
 const Work = () => {
     return(
-      <WorkWrapper>
+      <Section>
         <Row>
           <Container>
             <Column xs="12">
               <H2 center secondary>Work</H2>
             </Column>
           </Container>
-        </Row>  
-        <Row>
           <Container wide>
             <Column xs="12" md="6">
               <Box>  
@@ -52,14 +36,14 @@ const Work = () => {
               </Box>
             </Column>
             <Column xs="12" md="6">
-              <p>  
-                  Lorem ipsum dolor sit amet, consectetur
-              </p>
+              <Box>  
+                  <Button> Visit Website</Button>
+                  <Button> See on Github</Button>
+              </Box>
             </Column>
           </Container>
         </Row>
-        
-      </WorkWrapper>
+      </Section>
   )
 };
 
