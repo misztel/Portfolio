@@ -54,15 +54,13 @@ const BoxContent = styled.div`
 
 const Work = () => {
     return(
-      <WorkWrapper>
+      <Section>
         <Row>
           <Container>
             <Column xs="12">
               <H2 center secondary>Work</H2>
             </Column>
           </Container>
-        </Row>  
-        <Row>
           <Container wide>
             <Column xs="12" md="6">
               <Box>  
@@ -82,8 +80,7 @@ const Work = () => {
             </Column>
           </Container>
         </Row>
-        
-      </WorkWrapper>
+      </Section>
   )
 };
 

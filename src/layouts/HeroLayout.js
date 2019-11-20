@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import "./layout.css";
+import "./herolayout.css";
 import { colors } from '../utils/colors';
 import Header from '../components/Header/Header';
 
