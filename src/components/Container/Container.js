@@ -3,6 +3,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   padding: 0 15px;
   display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
   margin: ${props => (props.addmarg ? '30px auto 20px auto' : 'auto')};
   justify-content: ${props => (props.push ? 'space-between' : 'normal')};
 

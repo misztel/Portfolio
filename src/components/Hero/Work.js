@@ -5,7 +5,7 @@ import H2 from '../Semanatic/H2';
 import Row from '../Row/Row';
 import Container from '../Container/Container';
 import Column from '../Column/Column';
-import Button from  "../Button/Button";
+// import Button from  "../Button/Button";
 import Img from '../../images/project1.jpg';
 
 
@@ -24,16 +24,16 @@ const WorkWrapper = styled.div`
 `;
 
 const Box = styled.div`
-    width: 100%; 
+    width: 100%;
     position: relative;
     background-color: ${colors.primary};
     color: ${colors.white};
     border-radius: 10px;
-  }
 `;
 
 const BoxContent = styled.div`
-    width: 100%; 
+    width: 100%;
+    padding-top: 56.25%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -44,17 +44,15 @@ const BoxContent = styled.div`
     color: ${colors.white};
     border-radius: 10px;
     transition: all 0.3s;
-    height: 200px;
 
     :hover{
       transform: translate(8px, -8px);
     }
-  }
 `;
 
 const Work = () => {
     return(
-      <Section>
+      <WorkWrapper>
         <Row>
           <Container>
             <Column xs="12">
@@ -62,16 +60,32 @@ const Work = () => {
             </Column>
           </Container>
           <Container wide>
-            <Column xs="12" md="6">
-              <Box>  
+            <Column xs="6" md="6">
+              <Box>
                 <BoxContent>
                   {/* <Button> Visit Website</Button>
                   <Button> See on Github</Button> */}
                 </BoxContent>
               </Box>
             </Column>
-            <Column xs="12" md="6">
-            <Box>  
+            <Column xs="6" md="6">
+              <Box>
+                <BoxContent>
+                  {/* <Button> Visit Website</Button>
+                  <Button> See on Github</Button> */}
+                </BoxContent>
+              </Box>
+            </Column>
+            <Column xs="6" md="6">
+              <Box>
+                <BoxContent>
+                  {/* <Button> Visit Website</Button>
+                  <Button> See on Github</Button> */}
+                </BoxContent>
+              </Box>
+            </Column>
+            <Column xs="6" md="6">
+              <Box>
                 <BoxContent>
                   {/* <Button> Visit Website</Button>
                   <Button> See on Github</Button> */}
@@ -80,7 +94,7 @@ const Work = () => {
             </Column>
           </Container>
         </Row>
-      </Section>
+      </WorkWrapper>
   )
 };
 

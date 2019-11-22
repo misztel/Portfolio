@@ -11,8 +11,8 @@ function getWidth(span) {
 const Column = styled.div`
   float: left;
   ${({ xxs }) => (xxs ? getWidth(xxs) : 'width: 100%;')}
-  padding: ${props => (props.nopadd ? '0px' : '0px 15px')};
-  
+  padding: ${props => (props.nopadd ? '0px' : '15px')};
+
   @media (min-width: 480px) {
     ${({ xs }) => xs && getWidth(xs)}
     margin: 0;
